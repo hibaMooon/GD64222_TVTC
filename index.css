@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('background.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .nav {
+    background-color: rgba(138, 136, 136, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.main .nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin-inline: auto;
+    padding: 20px 40px;
+
+}
+
+.main .nav .container img {
+    max-width: 80px;
+}
+
+.main .nav .container a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #cc9932;
+    text-decoration: none;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    position: relative;
+}
+
+.main .nav .container a:hover {
+    color: #77581a;
+
+}
+
+.main .nav .container a::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #77581a;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.main .nav .container a:hover::before {
+    width: 100%;
+}
+
+.main .content {
+    display: flex;
+    flex: 1;
+}
+
+.main .content .container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .content .container .math_time {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px 60px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.main .content .container .math_time h2 {
+    color: white;
+}
+
+.main .content .container .math_time input,
+.main .content .container .math_time select {
+    text-align: end;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: 0;
+    outline: 0;
+}
+
+
+.main .content .container .math_time p {
+    font-size: 20px;
+}
+
+.main .content .container .math_time .error {
+    color: red;
+    text-align: right;
+}
+
+.main .content .container .math_time .error.hidden,
+.main .content .container .math_time .result.hidden {
+    display: none;
+}
+
+.main .content .container .math_time .result {
+    text-align: right;
+    color: rgb(1, 85, 1);
+}
+
+.main .content .container .math_time button {
+    background-color: #cc9932;
+    color: white;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+}

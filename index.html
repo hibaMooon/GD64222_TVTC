@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Math the time</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="container">
+                <img src="mm.jpg" alt="logo page">
+                <a href="https://t.me/GD642221" target="_blank">تواصل معنا</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <form class="math_time">
+                    <h2>حاسبة أوقات الدوام في الكليات التقنية</h2>
+                    <input type="time" name="" id="startTime"  placeholder="أدخل توقيت دوامك ساعات ودقائق">
+                    <input type="number" min="0" name="" id="totalHour" placeholder="أدخل عدد ساعات المحاضرة">
+                    <select id="selectionDate">
+                        <option value="null" selected disabled hidden>اختر توقيت</option>
+                        <option value="before">قبل رمضان</option>
+                        <option value="after">خلال رمضان</option>
+                    </select>
+                    <p class="error hidden"></p>
+                    <p class="result hidden"></p>
+                    <button class="total">
+                      نهاية المحاضرة
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
